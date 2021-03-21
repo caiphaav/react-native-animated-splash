@@ -68,7 +68,7 @@ public class Splash {
         getWindowDimensions();
         applicationContext = context;
         // Create dialog to present view
-        dialog = new Dialog(context, android.R.style.Theme_DeviceDefault_Light_NoActionBar_Fullscreen);
+        dialog = new Dialog(context, R.style.SplashScreeDarkTheme);
 //        setDialogAnimation(DIALOGFADE);
 //        dialog.getWindow().getAttributes().windowAnimations = R.style.Custom; //style id
         dialog.setCancelable(false);
@@ -421,7 +421,7 @@ public class Splash {
                     animationhide();
 
                 }
-            }, hideDelay);
+            });
         } else {
             animationhide();
         }

@@ -22,4 +22,9 @@
     <style name="fade">
         <item name="android:windowExitAnimation">@anim/fadeout_dialog</item>
     </style>
+    <style name="SplashScreeDarkTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:navigationBarColor">#0d0d0d</item>
+        <item name="android:statusBarColor">#0d0d0d</item>
+    </style>
 </resources>
