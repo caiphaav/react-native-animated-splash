@@ -9,14 +9,12 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 
-import com.blitzapp.animatedsplash.RNAnimatedSplashModule;
-
 import static com.blitzapp.animatedsplash.animation.Splash.applicationContext;
 import static com.blitzapp.animatedsplash.animation.Splash.screenHeight;
 import static com.blitzapp.animatedsplash.animation.Splash.screenWidth;
 
 
-public class AnimatedImage {
+public class AddImageView {
     private Integer imageSource;
     private int height;
     private int width;
@@ -33,27 +31,14 @@ public class AnimatedImage {
     public static final String FIT_CENTER = "FIT_CENTER";
     public static final String FIT_END = "FIT_END";
     public static final String FIT_START = "FIT_START";
-    public AnimatedImage(@NonNull Integer imageSource, double height, double width) {
+    public AddImageView(@NonNull Integer imageSource, double height, double width) {
         this.context = applicationContext;
         this.imageSource = imageSource;
         this.height = (int) (height);
         this.width = (int) (width);
         Splash.addImagetoView(this);
     }
-    public AnimatedImage(@NonNull Integer imageSource, double height, double width, double positionX, double positionY, boolean visibility) {
-        this.context = applicationContext;
-        this.imageSource = imageSource;
-        this.height = (int) (height);
-        this.width = (int) (width);
-        this.positionX = (float) positionX;
-        this.positionY = (float) positionY;
-        this.visibility = visibility;
-        this.scaleType = scaleType;
-        Splash.addImagetoView(this);
-
-    }
-
-    public AnimatedImage(@NonNull Integer imageSource, double height, double width, double positionX, double positionY, String scaleType, boolean visibility) {
+    public AddImageView(@NonNull Integer imageSource, double height, double width, double positionX, double positionY, boolean visibility) {
         this.context = applicationContext;
         this.imageSource = imageSource;
         this.height = (int) (height);
@@ -63,9 +48,22 @@ public class AnimatedImage {
         this.visibility = visibility;
         this.scaleType = scaleType;
         Splash.addImagetoView(this);
+
     }
 
-    public AnimatedImage(@NonNull Integer imageSource, double height, double width, double positionX, double positionY, double rotateDegree, boolean visibility) {
+    public AddImageView(@NonNull Integer imageSource, double height, double width, double positionX, double positionY, String scaleType, boolean visibility) {
+        this.context = applicationContext;
+        this.imageSource = imageSource;
+        this.height = (int) (height);
+        this.width = (int) (width);
+        this.positionX = (float) positionX;
+        this.positionY = (float) positionY;
+        this.visibility = visibility;
+        this.scaleType = scaleType;
+        Splash.addImagetoView(this);
+    }
+
+    public AddImageView(@NonNull Integer imageSource, double height, double width, double positionX, double positionY, double rotateDegree, boolean visibility) {
         this.context = applicationContext;
         this.imageSource = imageSource;
         this.height = (int) (height);
@@ -76,7 +74,7 @@ public class AnimatedImage {
         this.visibility = visibility;
         Splash.addImagetoView(this);
     }
-    public AnimatedImage(@NonNull Integer imageSource, double height, double width, double positionX, double positionY, double rotateDegree, double opacity, boolean visibility) {
+    public AddImageView(@NonNull Integer imageSource, double height, double width, double positionX, double positionY, double rotateDegree, double opacity, boolean visibility) {
         this.context = applicationContext;
         this.imageSource = imageSource;
         this.height = (int) (height);
@@ -88,7 +86,7 @@ public class AnimatedImage {
         this.opacity =  (float) opacity;
         Splash.addImagetoView(this);
     }
-    public AnimatedImage(@NonNull Integer imageSource, double height, double width, double positionX, double positionY, double rotateDegree, String scaleType, boolean visibility) {
+    public AddImageView(@NonNull Integer imageSource, double height, double width, double positionX, double positionY, double rotateDegree, String scaleType, boolean visibility) {
         this.context = applicationContext;
         this.imageSource = imageSource;
         this.height = (int) (height);
@@ -101,7 +99,7 @@ public class AnimatedImage {
         Splash.addImagetoView(this);
 
     }
-    public AnimatedImage(@NonNull Integer imageSource, double height, double width, double positionX, double positionY, double rotateDegree, double opacity, String scaleType, boolean visibility) {
+    public AddImageView(@NonNull Integer imageSource, double height, double width, double positionX, double positionY, double rotateDegree, double opacity, String scaleType, boolean visibility) {
         this.context = applicationContext;
         this.imageSource = imageSource;
         this.height = (int) (height);
